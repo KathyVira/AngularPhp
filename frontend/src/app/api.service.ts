@@ -11,27 +11,27 @@ export class ApiService {
   constructor(private httpClient: HttpClient) {}
 
 
-  // readW():Observable<any[]> {
-  //   return this.httpClient.get<any[]>(`${this.PHP_API_SERVER}/api/read.php`);
-  // }
+  readDark():Observable<any[]> {
+    return this.httpClient.get<any[]>(`${this.PHP_API_SERVER}/api/read.php`);
+  }
 
 
 
-  // createPolicy(policy: Policy): Observable<any> {
-  //   return this.httpClient.post<any>(
-  //     `${this.PHP_API_SERVER}/api/create.php`,
-  //     policy
-  //   );
-  // }
-  // updatePolicy(policy: any) {
-  //   return this.httpClient.put<any>(
-  //     `${this.PHP_API_SERVER}/api/update.php`,
-  //     policy
-  //   );
-  // }
-  // deletePolicy(id: number) {
-  //   return this.httpClient.delete<any>(
-  //     `${this.PHP_API_SERVER}/api/delete.php/?id=${id}`
-  //   );
-  // }
+  createDark(policy: Policy): Observable<any> {
+    return this.httpClient.post<any>(
+      `${this.PHP_API_SERVER}/api/create.php`,
+      policy
+    );
+  }
+  updateDark(policy: any) {
+    return this.httpClient.put<any>(
+      `${this.PHP_API_SERVER}/api/update.php`,
+      policy
+    );
+  }
+  deleteDark(id: number) {
+    return this.httpClient.delete<any>(
+      `${this.PHP_API_SERVER}/api/delete.php/?id=${id}`
+    );
+  }
 }

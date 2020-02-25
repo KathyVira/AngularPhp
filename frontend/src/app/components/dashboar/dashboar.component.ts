@@ -13,7 +13,6 @@ export class DashboarComponent implements OnInit {
   constructor(private apiService: ApiService) {}
 
   ngOnInit() {
-    
     // this.apiService.readW().subscribe((policies: any[]) => {
     //   this.policies = policies;
     //   console.log(this.policies);

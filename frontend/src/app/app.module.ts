@@ -12,6 +12,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
 import { ScrollingModule } from "@angular/cdk/scrolling";
 
+
 import { enableProdMode } from "@angular/core";
 enableProdMode();
 
